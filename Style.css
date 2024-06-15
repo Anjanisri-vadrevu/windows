@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.Banner{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: auto;
+    
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Logo{
+    width:160px;
+    height: 160px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.66s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.content{
+    width:100%;
+    position: relative;
+    top: 50;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 250px;
+}
+.content p{
+    margin: 20px auto;
+    font-size: medium;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 12px 0px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.66s;
+}
+button:hover span{
+    width:100%;
+}
+button:hover{
+    border:none;
+}
+.Bedroom{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/Bed.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.bed{
+    width:100%;
+    color: #fff;
+}
+.bed h2{ 
+    font-size: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+.bed p{
+    margin: 20px auto;
+    font-size: medium;
+    font-weight: 100;
+    line-height: 36px;   
+    margin-right: 26px;
+}
+.bed img{
+    height: 200px;
+    width: 200px;
+    margin: 26px;
+    float: left;
+    border-radius: 25px;
+}
+.bed h3{
+    font-size: 36px;
+    position: relative;
+    left: 250px;
+}
+.s{
+    display: inline-block;
+    margin: 26px 40px;
+}
+.s img{
+    height:250px;
+    width: 250px;
+    transition: transform .2s;
+}
+.s img:hover{
+    -webkit-transform: scale(1.4);
+}
+.s input{
+    position: relative;
+    top: 180px;
+    border-radius: 25px;
+    height: 25px;
+    width: 60px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    overflow: hidden;
+}
+.s input:hover{
+    text-decoration: underline;
+}
